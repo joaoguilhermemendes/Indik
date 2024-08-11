@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/banner.css">
     <link rel="stylesheet" href="styles/darktheme.css">
+    <link rel="stylesheet" href="styles/crud-form.css">
 </head>
 <body>
     <header>
@@ -43,6 +44,93 @@
             <h1>Logs and Favorites</h1>
         </div>
     </section>
+
+    <section class="concept-text">
+        <div class="center-box">
+            <p>
+                This platform leverages recommendation algorithms to connect users with others who
+                share similar interests across a diverse range of media. By analyzing user behavior
+                and preferences, the platform aims to create a personalized experience, tailoring
+                content suggestions to each user's unique tastes.
+                <br><br>
+                The ultimate goal is to enrich the user's experience by introducing them to new media
+                that align with their interests. Through this personalized approach, users can discover
+                content they may not have found otherwise, deepening their engagement and enjoyment of
+                the platform.
+            </p>
+        </div>
+    </section>
+
+    <section class="crud-form">
+        <div class="crud-form-box">
+            <div class="form-sections">
+                <button class="media-type-btn series-btn">Series</button>
+                <button class="media-type-btn movies-btn">Movies</button>
+                <button class="media-type-btn books-btn">Books</button>
+                <button class="media-type-btn musics-btn">Music</button>
+            </div>
+
+            <div class="form-collumns">
+                <div class="form-infos">
+                    <div class="form-input-box">
+                        <div class="form-label title-label">
+                            <h2>Title</h2>
+                        </div>
+                        <input type="text" name="title" class="form-input" placeholder="e.g.  To Kill a Mocking Bird">
+                    </div>
+                    <div class="line2-form">
+                        <div class="form-input-box">
+                            <div class="form-label release-date-label">
+                                <h2>Release Date</h2>
+                            </div>
+                            <input type="text" name="release-date" class="form-input" placeholder="e.g.  20/06/2024">
+                        </div>
+                        <div class="form-input-box">
+                            <div class="form-label creator-label">
+                                <h2>Creator</h2>
+                            </div>
+                            <input type="text" name="creator" class="form-input" placeholder="e.g.  Harper Lee">
+                        </div>
+                    </div>
+                    <div class="line3-form">
+                        <div class="form-input-box">
+                            <div class="form-label consume-date-label">
+                                <h2>Consume Date</h2>
+                            </div>
+                            <input type="text" name="consume-date" class="form-input" placeholder="e.g  20/06/2024">
+                        </div>
+                        <div class="form-input-box">
+                            <div class="form-label positions-label">
+                                <h2>Position</h2>
+                            </div>
+                            <input type="text" name="position" class="form-input" placeholder="e.g. #1">
+                        </div>
+                        <div class="form-input-box">
+                            <div class="form-label stars-label">
+                                <h2>Stars</h2>
+                            </div>
+                            <input type="text" name="stars" class="form-input" placeholder="e.g. #1">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poster-box">
+                    <div class="external-poster-box">
+                        <div class="form-label">
+                            <h2>Poster</h2>
+                        </div>
+                        <input type="file" name="poster" id="poster-upload">
+                        <label for="poster-upload"><img src="styles/images/poster-icon.png" alt=""></label>
+                    </div>
+                </div>
+
+                <div class="crud-action-button">
+                    <button>+</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
     <script src="script.js"></script>

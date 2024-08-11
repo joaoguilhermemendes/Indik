@@ -1,0 +1,260 @@
+@import './variables';
+@import './darktheme';
+
+.crud-form {
+    height: 250px;
+    margin-top: 50px;
+    text-align: center;
+    //background-color: rgb(62, 182, 172);
+
+    .crud-form-box {
+        //background-color: rgb(82, 202, 71);
+        width: 720px;
+        margin: auto;
+
+        .form-sections {
+            //background-color: blueviolet;
+            display: flex;
+            height: 40px;
+            border-bottom: 2px $secondary_black solid;
+            padding-bottom: 5px;
+
+            button {
+                width: 120px;
+                height: 40px;
+                margin-right: 10px;
+                background-color: $secondary_black;
+                border-radius: 10px;
+                border: 1px $secondary_black solid;
+                color: $second_gray;
+                font-weight: bold;
+                &:hover {
+                    border: 2px $primary_green solid;
+                }
+            }
+        }
+
+        .media-type-btn {
+            width: 100px;
+        }
+
+        .form-collumns {
+            display: flex;
+            margin-top: 10px;
+
+            .form-infos {
+                //background-color: chocolate;
+                width: 75%;
+
+                .form-input-box {
+                    display: flex;
+                    height: 35px;
+                    margin-bottom: 15px;
+                    align-items: center;
+                    text-align: left;
+
+                    .form-label {
+                        background-color: $secondary_black;
+                        color: $second_gray;
+                        text-align: left;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 34px;
+                        width: 70px;
+                        border-radius: 10px 0px 0px 10px;
+                        &:placeholder {
+                            color: aqua;
+                        }
+                    }
+
+                    .title-label {
+                        width: 50px;
+                    }
+
+                    .release-date-label {
+                        width: 200px;
+                    }
+
+                    .creator-label {
+                        width: 100px;
+                    }
+
+                    .consume-date-label {
+                        width: 220px;
+                    }
+
+                    .stars-label {
+                        width: 90px;
+                    }
+
+                    .positions-label {
+                        width: 150px;
+                    }
+
+                    h2 {
+                        font-size: 1rem;
+                    }
+
+                    .form-input {
+                        width: 90%;
+                        height: 30px;
+                        border-radius: 0px 10px 10px 0px;
+                        border: 1px $secondary_black solid;
+                        margin-right: 10px;
+                        padding-left: 5px;
+                    }
+                    input::placeholder {
+                        color: $secondary_black;
+                    }
+                }
+
+                .line2-form {
+                    display: flex;
+                    width: 100%;
+                }
+
+                .line3-form {
+                    display: flex;
+                    width: 100%;
+                }
+            }
+
+            .poster-box {
+                //background-color: chartreuse;
+                width: 20%;
+                border-radius: 20px;
+                
+
+                .external-poster-box {
+                    border: 1px $secondary_black solid;
+                    border-radius: 15px 15px 10px 10px;
+                    height: 140px;
+                    width: 130px;
+                }
+
+                .form-label {
+                    background-color: $secondary_black;
+                    color: $second_gray;
+                    align-items: center;
+                    justify-content: center;
+                    display: flex;
+                    height: 34px;
+                    width: 130px;
+                    border-radius: 10px 10px 0px 0px;
+                    margin: auto;
+                    font-size: 0.8rem;
+                }
+
+                input[type="file"] {
+                    display: none;
+                }
+
+                label {
+                    align-items: center;
+                    justify-content: center;
+                    text-align: flex;
+
+                    img {
+                        margin-top: 20px;
+                        width: 70px;
+                        height: 60px;
+                    }
+                }
+            }
+
+            .crud-action-button {
+                //background-color: brown;
+                width: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                button {
+                    width: 90%;
+                    height: 140px;
+                    font-size: 2.5rem;
+                    background-color: $primary_green;
+                    color: white;
+                    border: 2px $primary_green solid;
+                    border-radius: 10px;
+                    &:hover {
+                        background-color: $secondary_green;
+                        border: 2px $secondary_black solid;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .crud-form {
+    
+        .crud-form-box {
+            width: 420px;
+            height: 600px;
+    
+            .form-collumns {
+                display: block;
+    
+                .form-infos {
+                    width: 100%;
+    
+                    .line2-form {
+                        display: block;
+                        width: 100%;
+                    }
+    
+                    .line3-form {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+    
+                .poster-box {
+                    
+                    .external-poster-box {
+                        border-radius: 15px 15px 10px 10px;
+                        height: 110px;
+                        width: 410px;
+                    }
+    
+                    .form-label {
+                        width: 410px;
+                    }
+    
+                    label {
+    
+                        img {
+                            margin-top: 10px;
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                }
+    
+                .crud-action-button {
+                    width: 100%;
+    
+                    button {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 40px;
+                        margin-top: 15px;
+                    } 
+                }
+            }
+        }
+    }
+}

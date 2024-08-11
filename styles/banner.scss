@@ -8,7 +8,7 @@
     height: 90px;
     text-align: center;
     padding-top: 30px;
-    border-bottom: 3px rgb(202, 201, 201) solid;
+    border-bottom: 3px $primary_gray solid;
 
     .section-title {
         width: 510px;
@@ -42,6 +42,19 @@
     }
 }
 
+.concept-text {
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+
+    .center-box {
+
+        p {
+            font-family: $text_font;
+        }
+    }
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .top-banner-bg {
@@ -58,6 +71,19 @@
     
             h1 {
                 font-size: 1.8rem;
+            }
+        }
+    }
+
+    .concept-text {
+        width: 80%;
+        margin: auto;
+        margin-top: 100px;
+    
+        .center-box {
+    
+            p {
+                font-family: $text_font;
             }
         }
     }

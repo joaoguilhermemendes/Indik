@@ -1,0 +1,31 @@
+// Dark Theme Styles
+body.dark-theme {
+    background-color: $primary_black;
+    color: $primary_black;
+
+    header.dark-theme {
+        background-color: #333;
+    
+        .nav-links a.dark-theme {
+            color: #ecf0f1;
+        }
+        
+        .nav-links a.dark-theme:hover {
+            background-color: #2980b9;
+        }
+
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .bar {
+            width: 30px;
+            height: 3px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+@import './variables';
+@import './darktheme';
+
+.top-banner-bg {
+    background-color: $fourth_green;
+    vertical-align: middle;
+    text-align: center;
+    height: 90px;
+    text-align: center;
+    padding-top: 30px;
+    border-bottom: 3px rgb(202, 201, 201) solid;
+
+    .section-title {
+        width: 510px;
+        display: flex;
+        margin: auto;
+
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            margin-right: 0.5rem;
+            border-radius: 50%;
+            border: 5px $primary_green solid;
+        }
+
+        .title-and-user {
+            display: block;
+            height: 80px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            text-align: bottom;
+            color: $primary_green;
+        }
+
+        h2 {
+            font-size: 1rem;
+            text-align: left;
+            color: $primary_green; 
+        }
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .top-banner-bg {
+        height: 100px;
+        text-align: left;
+    
+        .section-title {
+            width: 360px;
+    
+            .profile-img {
+                width: 130px;
+                height: 130px;
+            }
+    
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}

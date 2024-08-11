@@ -1,13 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sofia+Sans:wght@700&display=swap');
-
-$primary_black: #0D1117;
-$primary_green: #0F9942;
-$secondary_green: #30D85A;
-$third_green: #91FA91;
-
-$logo_font: 'Open Sans';
-$title_font: 'Sofia Sans';
-$text_font: 'sans-serif';
+@import './variables';
+@import './darktheme';
 
 body {
     margin: 0;
@@ -26,6 +18,7 @@ body {
             align-items: center;
         
             .logo {
+                font-style: italic;
                 display: flex;
                 align-items: center;
                 a {
@@ -85,7 +78,11 @@ body {
                 cursor: pointer;
                 align-items: right;
                 text-align: right;
+                &:hover {
+                    background-color: $secondary_green;
+                }
             }
+            
 
             .theme-toggle {
                 width: 40px;
@@ -118,41 +115,6 @@ body {
 }
 
 
-
-// Dark Theme Styles
-body.dark-theme {
-    background-color: #1c1c1c;
-    color: #ecf0f1;
-
-    header.dark-theme {
-        background-color: #333;
-    
-        .nav-links a.dark-theme {
-            color: #ecf0f1;
-        }
-        
-        .nav-links a.dark-theme:hover {
-            background-color: #2980b9;
-        }
-
-        .menu-toggle {
-            display: none;
-            cursor: pointer;
-            flex-direction: column;
-            gap: 5px;
-        }
-        
-        .bar {
-            width: 30px;
-            height: 3px;
-            background-color: #ecf0f1;
-            border-radius: 5px;
-        }
-    }
-}
-
-
-
 /* Responsive Styles */
 @media (max-width: 768px) {
     .nav-links {
@@ -161,7 +123,7 @@ body.dark-theme {
         position: absolute;
         top: 80px;
         right: 2rem;
-        background-color: #2c3e50;
+        background-color: $primary_black;
         border-radius: 5px;
         padding: 1rem;
         box-shadow: 0 4px 8px rgba(0,0,0,0.3);

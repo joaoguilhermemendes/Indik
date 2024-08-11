@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sofia+Sans:wght@700&display=swap');
+
+$primary_black: #0D1117;
+$primary_green: #0F9942;
+$secondary_green: #30D85A;
+$third_green: #91FA91;
+
+$logo_font: 'Open Sans';
+$title_font: 'Sofia Sans';
+$text_font: 'sans-serif';
+
+body {
+    margin: 0;
+    font-family: $title_font;
+    transition: background-color 0.3s, color 0.3s;
+
+    header {
+        background-color: $primary_black;
+        color: #ecf0f1;
+        padding: 1rem 2rem;
+
+        // Logo and name
+        .navbar { 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
+            .logo {
+                display: flex;
+                align-items: center;
+                a {
+                    color: #ecf0f1;
+                    text-decoration: none;
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                }
+            
+                .logo-img {
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+        
+        // Sections
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            flex: 1;
+            justify-content: center;
+            li {
+                margin-left: 1rem;
+            }
+            a {
+                color: #ecf0f1;
+                text-decoration: none;
+                padding: 0.75rem 1rem;
+                display: block;
+                font-size: 1rem;
+                transition: background-color 0.3s, border-radius 0.3s;
+                border-radius: 5px;
+                &:hover {
+                    border-radius: 5px;
+                    color: $primary_green;
+                }
+            }
+        }
+
+        // Theme toggle button
+        .nav-right {
+            display: flex;
+            align-items: center;
+        
+            .login-btn {
+                background-color: $primary_green;
+                font-family: $logo_font;
+                color: #fff;
+                border: none;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+                font-size: 1rem;
+                cursor: pointer;
+                align-items: right;
+                text-align: right;
+            }
+
+            .theme-toggle {
+                width: 40px;
+                height: 20px;
+                //background-color: #595b5e;
+                border: $primary_green 1px solid;
+                border-radius: 20px;
+                margin-right: 1rem;
+                position: relative;
+                cursor: pointer;
+                
+                .toggle-circle {
+                    width: 16px;
+                    height: 16px;
+                    background-color: $primary_green;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 2px;
+                    left: 2px;
+                    transition: transform 0.3s;
+                }
+            }
+        }
+    }
+}
+
+.theme-toggle.active .toggle-circle {
+    transform: translateX(20px);
+    background-color: #2c3e50;
+}
+
+
+
+// Dark Theme Styles
+body.dark-theme {
+    background-color: #1c1c1c;
+    color: #ecf0f1;
+
+    header.dark-theme {
+        background-color: #333;
+    
+        .nav-links a.dark-theme {
+            color: #ecf0f1;
+        }
+        
+        .nav-links a.dark-theme:hover {
+            background-color: #2980b9;
+        }
+
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .bar {
+            width: 30px;
+            height: 3px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+        }
+    }
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 2rem;
+        background-color: #2c3e50;
+        border-radius: 5px;
+        padding: 1rem;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        &:active {
+            display: flex;
+        }
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+    
+    .nav-right {
+        display: none;
+    }
+}

@@ -12,6 +12,26 @@
         width: 720px;
         margin: auto;
 
+        .crud-operators {
+            display: flex;
+            height: 30px;
+            margin-bottom: 5px;
+
+            button {
+                width: 120px;
+                height: 30px;
+                margin-right: 10px;
+                background-color: $fourth_green;
+                border-radius: 10px;
+                border: 1px $secondary_black solid;
+                color: $secondary_black;
+                font-weight: bold;
+                &:hover {
+                    border: 2px $primary_green solid;
+                }
+            }
+        }
+        
         .form-sections {
             //background-color: blueviolet;
             display: flex;

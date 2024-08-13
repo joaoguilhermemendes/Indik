@@ -64,16 +64,16 @@
     <section class="crud-form">
         <div class="crud-form-box">
             <div class="crud-operators">
-                <button class="media-type-btn series-btn">Include</button>
-                <button class="media-type-btn movies-btn">Delete</button>
-                <button class="media-type-btn books-btn">Switch</button>
-                <button class="media-type-btn musics-btn">Edit</button>
+                <button class="include-btn selected-btn" data-symbol="+">Include</button>
+                <button class="delete-btn selected-btn" data-symbol="x">Delete</button>
+                <button class="switch-btn selected-btn" data-symbol="switch">Switch</button>
+                <button class="edit-btn selected-btn" data-symbol="edit">Edit</button>
             </div>
             <div class="form-sections">
-                <button class="media-type-btn series-btn">Series</button>
-                <button class="media-type-btn movies-btn">Movies</button>
-                <button class="media-type-btn books-btn">Books</button>
-                <button class="media-type-btn musics-btn">Music</button>
+                <button class="media-type-btn series-btn selected-btn-media">Series</button>
+                <button class="media-type-btn movies-btn selected-btn-media">Movies</button>
+                <button class="media-type-btn books-btn selected-btn-media">Books</button>
+                <button class="media-type-btn musics-btn selected-btn-media">Music</button>
             </div>
 
             <div class="form-collumns">
@@ -131,7 +131,7 @@
                 </div>
 
                 <div class="crud-action-button">
-                    <button>+</button>
+                    <button id="operation-symbol">+</button>
                 </div>
             </div>
         </div>

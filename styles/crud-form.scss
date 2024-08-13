@@ -17,7 +17,7 @@
             height: 30px;
             margin-bottom: 5px;
 
-            button {
+            .selected-btn {
                 width: 120px;
                 height: 30px;
                 margin-right: 10px;
@@ -30,6 +30,9 @@
                     border: 2px $primary_green solid;
                 }
             }
+            .selected-btn.active {
+                background-color: $second_gray;
+            }
         }
         
         .form-sections {
@@ -39,7 +42,7 @@
             border-bottom: 2px $secondary_black solid;
             padding-bottom: 5px;
 
-            button {
+            .selected-btn-media {
                 width: 120px;
                 height: 40px;
                 margin-right: 10px;
@@ -51,6 +54,10 @@
                 &:hover {
                     border: 2px $primary_green solid;
                 }
+            }
+            .selected-btn-media.active {
+                background-color: $second_gray;
+                color: $secondary_black;
             }
         }
 

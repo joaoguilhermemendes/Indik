@@ -117,14 +117,14 @@ body {
 /* Responsive Styles */
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
+        display: none;  
         flex-direction: column;
         position: absolute;
         top: 80px;
         right: 2rem;
         background-color: $primary_black;
         border-radius: 5px;
-        padding: 1rem;
+        padding: 2rem;
         box-shadow: 0 4px 8px rgba(0,0,0,0.3);
         &:active {
             display: flex;

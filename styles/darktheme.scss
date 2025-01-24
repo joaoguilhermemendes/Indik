@@ -5,6 +5,14 @@ body.dark-theme {
     background-color: $primary_black;
     color: $primary_gray;
 
+    h1 {
+        color: $primary_gray;
+    }
+
+    p {
+        color: $primary_gray;
+    }
+
     header.dark-theme {
         background-color: #333;
     
@@ -35,6 +43,9 @@ body.dark-theme {
         background-color: $second_gray;
         border: 1px $second_gray solid;
     }
+    ::-webkit-input-placeholder {
+        color: $primary_black;
+     }
 
     .form-label {
         border: 1px $primary_black solid;

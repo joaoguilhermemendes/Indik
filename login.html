@@ -48,13 +48,20 @@
             <h1>Log in</h1>
             <p>Doesn't have registred yet? <a class="green-highlight" href="signup.html"><u>Sign up</u></a></p>
 
-            <input type="email" name="email" id="email-input" class="long-input" placeholder="E-mail"><br>
-            <input type="password" name="password" id="psw-input" class="long-input" placeholder="Enter your password"><br><br><br>
+            <input type="email" name="email" id="email-input" class="long-input form-input" placeholder="E-mail"><br>
+            <input type="password" name="password" id="psw-input" class="long-input form-input" placeholder="Enter your password"><br><br><br>
             
-            <input type="checkbox" name="terms-and-conditions" id="terms-and-conditions"> I agree to the <a class="green-highlight" href="#">Terms & Conditions</a> <br><br><br><br><br>
+            <div style="display: flex;">
+                <input type="checkbox" name="terms-and-conditions" id="terms-and-conditions">
+                <p>I agree to the <a class="green-highlight" href="#">Terms & Conditions</a></p>
+            </div>
+            <br><br><br><br><br>
 
             <input type="submit" value="Log in" class="login-long-btn">
         </section>
     </section>
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="cookies.js"></script>
 </body>
 </html>

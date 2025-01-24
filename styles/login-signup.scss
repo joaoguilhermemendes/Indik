@@ -2,7 +2,7 @@
 @import './darktheme';
 
 body {
-    background-color: $primary_black;
+    background-color: white;
 }
 
 #login-signup-section {
@@ -11,94 +11,94 @@ body {
     width: 95%;
     margin: auto;
     display: flex;
-}
 
-#login-signup-banner {
-    background-image: url("images/green-banner-login.jpg");
-    background-size: cover;
-    height: 600px;
-    width: 55%;
-    margin: auto;
-    border-radius: 30px;
-    h1 {
-        font-size: 2.5em;
-        color: white;
+    #login-signup-banner {
+        background-image: url("images/green-banner-login.jpg");
+        background-size: cover;
+        height: 600px;
+        width: 55%;
         margin: auto;
-        text-align: center;
-        margin-top: 450px;
+        border-radius: 30px;
+        h1 {
+            font-size: 2.5em;
+            color: white;
+            margin: auto;
+            text-align: center;
+            margin-top: 450px;
+        }
     }
-}
 
-#login-signup-form {
-    height: 600px;
-    width: 40%;
-    margin: auto;
-    color: white;
-    h1 {
-        font-size: 2.5em;
-        margin-bottom: 0px
-    };
-    p {
-        font-weight: 100
-    };
-    
-}
-
-.long-input {
-    width: 97%;
-    height: 40px;
-    margin-top: 20px;
-    border-radius: 7px;
-    border: none;
-    padding: 5px 0px 5px 15px;
-}
-
-.login-long-btn {
-    background-color: $primary_green;
-    font-family: $logo_font;
-    width: 100%;
-    height: 40px;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    &:hover {
-        background-color: $secondary_green;
-    }
-}
-
-#full-name {
-    display: flex;
-    width: 100%;
-
-    .short-input {
+    #login-signup-form {
+        height: 600px;
         width: 40%;
-        height: 40px;
-        padding: 5px;
-        padding-left: 15px;
-        margin-right: 20px;
-        border-radius: 10px;
-        border: none;
+        margin: auto;
+        color: $primary_black;
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0px
+        }
+        p {
+            font-weight: 100
+        }   
+
+        .long-input {
+            width: 97%;
+            height: 40px;
+            margin-top: 20px;
+            border-radius: 7px;
+            border: 1px $primary_black solid;
+            padding: 5px 0px 5px 15px;
+        }
+
+        .login-long-btn {
+            background-color: $primary_green;
+            font-family: $logo_font;
+            width: 100%;
+            height: 40px;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-align: center;
+            &:hover {
+                background-color: $secondary_green;
+            }
+        }
+
+        #terms-and-conditions {
+            border: none;
+            background-color: rgb(9, 255, 0);
+        }
+        
+        .green-highlight {
+            color: $primary_green;
+        }
+
+        #full-name {
+            display: flex;
+            width: 100%;
+        
+            .short-input {
+                width: 40%;
+                height: 40px;
+                padding: 5px;
+                padding-left: 15px;
+                margin-right: 20px;
+                border-radius: 10px;
+                border: 1px $primary_black solid;
+            }
+            .mid-input {
+                width: 60%;
+                height: 40px;
+                padding: 5px;
+                padding-left: 15px;
+                border-radius: 10px;
+                border: none;                
+                border: 1px $primary_black solid;
+
+            }
+        }
     }
-    .mid-input {
-        width: 60%;
-        height: 40px;
-        padding: 5px;
-        padding-left: 15px;
-        border-radius: 10px;
-        border: none;
-    }
 }
-
-#terms-and-conditions {
-    border: none;
-    background-color: rgb(9, 255, 0);
-}
-
-.green-highlight {
-    color: $primary_green;
-}
-

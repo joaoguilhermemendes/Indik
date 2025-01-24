@@ -5,10 +5,8 @@
     height: 250px;
     margin-top: 50px;
     text-align: center;
-    //background-color: rgb(62, 182, 172);
 
     .crud-form-box {
-        //background-color: rgb(82, 202, 71);
         width: 720px;
         margin: auto;
 
@@ -36,7 +34,6 @@
         }
         
         .form-sections {
-            //background-color: blueviolet;
             display: flex;
             height: 40px;
             border-bottom: 2px $secondary_black solid;
@@ -70,7 +67,6 @@
             margin-top: 10px;
 
             .form-infos {
-                //background-color: chocolate;
                 width: 75%;
 
                 .form-input-box {

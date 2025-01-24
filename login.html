@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/login-signup.css">
+    <link rel="stylesheet" href="styles/darktheme.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="styles/images/logo-icon.png" alt="Logo" class="logo-img">
+                <a href="#">Indik</a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#series">Series</a></li>
+                <li><a href="#moviest">Movies</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#musics">Musics</a></li>
+            </ul>
+
+            <div class="menu-toggle" id="menuToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="nav-right">
+                <div class="theme-toggle" id="themeToggle">
+                    <span class="toggle-circle"></span>
+                </div>
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="login-signup-section">
+        <section id="login-signup-banner">
+            <h1>Capturing Moments,<br>Creating Memories</h1>
+        </section>
+
+        <section id="login-signup-form">
+            <h1>Log in</h1>
+            <p>Doesn't have registred yet? <a class="green-highlight" href="#"><u>Sign up</u></a></p>
+
+            <input type="email" name="email" id="email-input" class="long-input" placeholder="E-mail"><br>
+            <input type="password" name="password" id="psw-input" class="long-input" placeholder="Enter your password"><br><br><br>
+            
+            <input type="checkbox" name="terms-and-conditions" id="terms-and-conditions"> I agree to the <a class="green-highlight" href="#">Terms & Conditions</a> <br><br><br><br><br>
+
+            <input type="submit" value="Log in" class="login-long-btn">
+        </section>
+    </section>
+</body>
+</html>

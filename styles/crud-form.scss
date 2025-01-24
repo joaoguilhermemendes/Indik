@@ -31,7 +31,7 @@
                 }
             }
             .selected-btn.active {
-                background-color: $second_gray;
+                background-color: $primary_green;
             }
         }
         
@@ -56,7 +56,7 @@
                 }
             }
             .selected-btn-media.active {
-                background-color: $second_gray;
+                background-color:$primary_green;
                 color: $secondary_black;
             }
         }
@@ -184,8 +184,12 @@
 
                     img {
                         margin-top: 20px;
-                        width: 70px;
-                        height: 60px;
+                        width: 72px;
+                        height: 63px;
+                        &:hover {
+                            width: 75px;
+                            height: 65px;
+                        }
                     }
                 }
             }
@@ -210,7 +214,6 @@
                         border: 2px $secondary_black solid;
                     }
                 }
-                
             }
         }
     }
@@ -260,7 +263,6 @@
                     }
     
                     label {
-    
                         img {
                             margin-top: 10px;
                             width: 50px;

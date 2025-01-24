@@ -33,6 +33,11 @@ body.dark-theme {
 
     .form-input {
         background-color: $second_gray;
+        border: 1px $second_gray solid;
+    }
+
+    .form-label {
+        border: 1px $primary_black solid;
     }
 
     .external-poster-box {

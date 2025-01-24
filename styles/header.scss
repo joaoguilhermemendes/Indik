@@ -83,6 +83,22 @@ body {
                 }
             }
             
+            .signup-btn {
+                background-color: $primary_black;
+                font-family: $logo_font;
+                color: #fff;
+                border: 1px $primary_green solid;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+                font-size: 1rem;
+                cursor: pointer;
+                align-items: right;
+                text-align: right;
+                margin-left: 10px;
+                &:hover {
+                    background-color: $secondary_green;
+                }
+            }
 
             .theme-toggle {
                 width: 40px;

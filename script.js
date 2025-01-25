@@ -1,20 +1,23 @@
+// Load/Set the theme preference
 import { setCookie, getCookie, checkCookie } from './cookies.js';
 document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.getElementById('menuToggle');
-    const navLinks = document.querySelector('.nav-links');
+    const themeToggle = document.getElementById('themeToggle');
     const body = document.body;
 
-    // Active Light theme
-    menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        setCookie('theme', 'light', 7);
-    });
+    // Check the current theme and set it
+    const currentTheme = checkCookie();
+    if (currentTheme === "dark") {
+        body.classList.add('dark-theme');
+        themeToggle.classList.add('active');
+    }
 
-    // Active Dark theme
+    // Changes the theme and saves the user's preference
     themeToggle.addEventListener('click', () => {
         body.classList.toggle('dark-theme');
         themeToggle.classList.toggle('active');
-        setCookie('theme', 'dark', 7);
+
+        const newTheme = body.classList.contains('dark-theme') ? "dark" : "light";
+        setCookie('theme', newTheme, 365); // Save the preference for 1 year
     });
 });
 

@@ -30,15 +30,11 @@ export function getCookie(name) {
 }
 
 export function checkCookie() {
-    // Uses getCookie to check if the cookie exists
-    let name = "theme"
-    const cookieValue = getCookie(name);
-
-    // Returns true if the cookie exists, false if it does not
-    if (cookieValue !== null) {
-        console.log(`Cookie "${name}" found with value: ${cookieValue}`);
-    } else {
-        console.log(`Cookie "${name}" not found.`);
-        setCookie(name, )
+    const theme = getCookie("theme");
+    if (!theme) {
+        // If the cookie dosent exist, define the default theme as light
+        setCookie("theme", "light", 365); // for 1 year
+        return "light";
     }
+    return theme;
 }
